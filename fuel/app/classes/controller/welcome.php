@@ -22,6 +22,15 @@
 class Controller_Welcome extends Controller
 {
 
+    /**
+     * Print phpinfo
+     *
+     */
+    public function action_phpinfo()
+    {
+		return Response::forge(View::forge('welcome/phpinfo'));
+    }
+
 	/**
 	 * The basic welcome message
 	 *
